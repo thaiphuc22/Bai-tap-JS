@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 12</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Baif 1  
+Viết 1 function kiểm tra 1 chuỗi có nằm trong chuỗi còn lại hay không. Nếu có trả về true, nếu không trả về false
+
+Đầu vào có 2 tham số : Tham số 1 là chuỗi ban đầu, tham số 2 là chuỗi cần kiểm tra
+
+Ví dụ:
+
+checkStringExist(“i love you”, “you”) => true
+checkStringExist(“i love you”, “hate”) => false
+-->
+<div class="farme">
+    <p class="work-title"> Bài 1</p>
+    <p>
+        Viết 1 function kiểm tra 1 chuỗi có nằm trong chuỗi còn lại hay không. Nếu có trả về true, nếu không trả về false <br>
+        Đầu vào có 2 tham số : Tham số 1 là chuỗi ban đầu, tham số 2 là chuỗi cần kiểm tra <br>
+        Ví dụ: <br>
+        checkStringExist(“i love you”, “you”) => true <br>
+        checkStringExist(“i love you”, “hate”) => false <br>
+    
+    </p>
+    <h2>Kiểm tra 1 chuỗi có nằm trong chuỗi còn lại hay không </h2>
+    <div>
+        <label for="mainString">Nhập chuỗi gốc:</label>
+        <input type="text" id="mainString" name="mainString">
+    </div>
+    <br>
+    <div>
+        <label for="subString">Nhập chuỗi muốn tìm kiếm:</label>
+        <input type="text" id="subString" name="subString">
+    </div>
+    <br>
+  
+    <div>
+        <button type="button" onclick="checkStringExist()">Kiểm tra</button>
+    </div>
+    <br>
+    <div id="result_checkStringExist"></div>
+</div>
+
+<!-- Bai 2 -->
+<div class="farme">
+    <p class="work-title"> Bài 2</p>
+    <p>
+    Viết function truyền vào 1 chuỗi, hãy rút ngắn chuỗi bằng cách cắt ra 8 ký tự đầu của 1 chuỗi và thêm dấu ba chấm ở cuối chuỗi. Nếu chuỗi có độ dài <= 8 ký tự thì giữ nguyên <br>
+    Ví dụ:<br>
+    shortenString(“Xin chào các bạn”) => “Xin chào…”<br>
+    shortenString("hello’) => “hello”<br>
+    
+    </p>
+    <h2>Hàm rút ngắn một chuỗi </h2>
+    <div>
+        <label for="originString">Nhập chuỗi gốc:</label>
+        <input type="text" id="originString" name="originString">
+    </div>
+    <br>
+      
+    <div>
+        <button type="button" onclick="shortenString()">Kiểm tra</button>
+    </div>
+    <br>
+    <div id="result_shortenString"></div>
+</div>
+
+<!-- Bai 3 -->
+<div class="farme">
+    <p class="work-title"> Bài 3</p>
+    <p>
+      Viết function truyền vào 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không (chuỗi đối xứng là chuỗi đọc xuôi hay ngược đều như nhau, không tính khoảng trắng, không phân biệt hoa thường), kết quả trả về true hoặc false.<br>
+
+        Ví dụ <br>
+        
+        “Race car” => true,<br>
+        “hello world” => false.<br>
+    
+    </p>
+    <h2>Kiểm tra chuỗi đối xứng </h2>
+    <div>
+        <label for="originString2">Nhập chuỗi gốc:</label>
+        <input type="text" id="originString2" name="originString2">
+    </div>
+    <br>
+      
+    <div>
+        <button type="button" onclick="isPalindrome()">Kiểm tra</button>
+    </div>
+    <br>
+    <div id="result_isPalindrome"></div>
+</div>
+
+
+<!-- Bai 4 -->
+
+<div class="farme">
+    <p class="work-title"> Bài 4</p>
+    <p>
+      Viết function truyền vào 1 số nguyên, hãy sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). <br>
+
+        Ví dụ <br>
+        
+        53751 -> 13557 <br>
+        14350 -> 10345<br>
+        203950 -> 200359<br>
+    
+    </p>
+    <h2>Tìm ra chuỗi nhỏ nhất </h2>
+    <div>
+        <label for="originNumber">Nhập số nguyên dương:</label>
+        <input type="number" id="originNumber" name="originNumber">
+    </div>
+    <br>
+      
+    <div>
+        <button type="button" onclick="smallestNumber()">Thực thi</button>
+    </div>
+    <br>
+    <div id="result_smallestNumber"></div>
+</div>
+
+<!-- Bai 5 -->
+<div class="farme">
+    <p class="work-title"> Bài 5</p>
+    <p>
+        Viết function truyền vào 1 chuỗi bất kỳ gồm nhiều từ. Hãy chuyển chuỗi đó thành dạng snake_case và viết thường <br>
+        Ví dụ: <br>
+        “HELLO world” => “hello_world”<br>
+        “Xin Chào Các BẠN” => “xin_chào_các_bạn”<br>
+    
+    </p>
+    <h2> Chuyển chuỗi đó thành dạng snake_case và viết thường</h2>
+    <div>
+        <label for="originString3">Nhập chuỗi gốc:</label>
+        <input type="text" id="originString3" name="originString3">
+    </div>
+    <br>
+      
+    <div>
+        <button type="button" onclick="toSnakeCase()">Thực thi</button>
+    </div>
+    <br>
+    <div id="result_toSnakeCase"></div>
+</div>
+
+
+<!-- Import JS -->
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
