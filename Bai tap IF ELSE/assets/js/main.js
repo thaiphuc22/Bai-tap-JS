@@ -149,7 +149,7 @@ function checkDivisibleBy3And5(n) {
 };
 
 
-// 
+// Bài 6: Viết function nhập vào 3 số x, y, z. Kiểm tra xem z có bằng x + y không?
 
 function checkSum(x, y, z) {
     var x = parseFloat(document.getElementById("xInput").value);
