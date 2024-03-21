@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.farme {
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 237, 237);
+    margin-bottom: 24px;
+    padding: 24px;
+}
+
+.work-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#result_repeatString, #result_repeatString2, #result_repeatString3, #result_sumOfMultiplesOf5 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}

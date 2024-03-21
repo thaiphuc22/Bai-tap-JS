@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap 11</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Bai 1 -->
+<div class="farme">
+    <p class="work-title"> Bài 1</p>
+    <p>
+        Viết function truyền vào 1 chuỗi bất kỳ, hãy sao chép chuỗi đó lên 10 lần. <br>
+        - Ví dụ : repeatString(“a”) => Kết quả trả về là “aaaaaaaaaa”
+    </p>
+    <h2>Lặp lại 10 lần 1 chuỗi</h2>
+    <form action="">
+        <label for="inputString">Nhập một chuỗi ký tự bất kỳ</label>
+        <input type="text" id="inputString" name="inputString">
+        <button type="button" onclick="repeatString()">Thực thi</button>
+    </form>
+    <br>
+    <div id="result_repeatString"></div>
+</div>
+
+
+<!-- Bai 2 -->
+<div class="farme">
+    <p class="work-title"> Bài 2</p>
+    <p>
+        Viết function truyền vào 1 chuỗi bất kỳ, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang. <br>
+
+        - Ví dụ: repeatString(“a”) => Kết quả trả về là “a-a-a-a-a-a-a-a-a-a” <br>
+    </p>
+    <h2>Lặp lại 10 lần 1 chuỗi ngăn cách bởi dấu -</h2>
+    <form action="">
+        <label for="inputString2">Nhập một chuỗi ký tự bất kỳ</label>
+        <input type="text" id="inputString2" name="inputString2">
+        <button type="button" onclick="repeatString2()">Thực thi</button>
+    </form>
+    <br>
+    <div id="result_repeatString2"></div>
+</div>
+
+<!-- Bai 3 -->
+<div class="farme">
+    <p class="work-title"> Bài 3</p>
+    <p>
+        Viết function truyền vào 1 chuỗi bất kỳ và 1 số nguyên dương n > 1, hãy viết hàm có tác dụng sao chép đó chuỗi lên n lần, ngăn cách nhau bởi dấu gạch ngang. <br>
+
+        - Ví dụ: repeatString(‘a’, 5) => Kết quả trả về là ‘a-a-a-a-a’ <br>
+    </p>
+    <h2>Lặp lại a lần 1 chuỗi ngăn cách bởi dấu -</h2>
+    <div>
+        <label for="a">Nhập một số nguyên dương:</label>
+        <input type="number" id="a" name="a">
+    </div>
+    <br>
+    <form action="">
+        <label for="inputString3">Nhập một chuỗi ký tự bất kỳ</label>
+        <input type="text" id="inputString3" name="inputString3">
+        <button type="button" onclick="repeatString3()">Thực thi</button>
+    </form>
+    <br>
+    <div id="result_repeatString3"></div>
+</div>
+
+
+<!-- Bài 4. Viết function tính tổng các số chia hết cho 5 từ 0 -> 100 -->
+
+<div class="farme">
+    <p class="work-title"> Bài 4</p>
+    <p>
+        Viết function tính tổng các số chia hết cho 5 từ 0 -> 100 <br>
+
+        
+    </p>
+    <h2>Tổng các số chia hết cho 5 từ 0 -> 100 -</h2>
+    <div>
+        <button type="button" onclick="sumOfMultiplesOf5()">Xem kết quả</button>
+    </div>
+    <br>
+    <div id="result_sumOfMultiplesOf5"></div>
+</div>
+
+
+
+<!-- Bài 5: Viết function tính thể tích hình cầu, với tham số truyền vào là bán kính của hình cầu. -->
+<div class="farme">
+    <p class="work-title"> Bài 5</p>
+    <p>
+        Viết function tính thể tích hình cầu, với tham số truyền vào là bán kính của hình cầu <br>
+    </p>
+    <h2>Tỉnh thể tích hình cầu </h2>
+    <div>
+        <label for="radius">Nhập bán kính hình cầu:</label>
+        <input type="number" id="radius" name="radius">
+    </div>
+    <br>
+    <div>
+        <button type="button" onclick="sphereVolume()">Xem kết quả</button>
+    </div>
+    <br>
+    <div id="result_sphereVolume"></div>
+</div>
+
+<!-- Bài 6: Viết hàm function vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng. Ví dụ với tham số 3 và 8 ta có kết quả là 22 (bằng 4 + 5 + 6 + 7).
+
+Note : Kết quả xuôi và ngược là như nhau
+
+Ví dụ :
+
+sum(3,8) = 22
+sum(8,3) = 22 -->
+
+<div class="farme">
+    <p class="work-title"> Bài 6</p>
+    <p>
+        Viết hàm nhập vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng <br>
+        Ví dụ với tham số 3 và 8 ta có kết quả là 22 (bằng 4 + 5 + 6 + 7) <br>
+        Note : Kết quả xuôi và ngược là như nhau<br>
+        Ví dụ :<br>
+        sum(3,8) = 22<br>
+        sum(8,3) = 22 <br>
+    </p>
+    <h2>Viết hàm nhập vào 2 số nguyên, tính tổng tất cả các số nguyên nằm giữa chúng </h2>
+    <div>
+        <label for="a">Nhập số thứ nhất:</label>
+        <input type="number" id="aInput" name="a">
+    </div>
+    <br>
+    <div>
+        <label for="a">Nhập số thứ hai:</label>
+        <input type="number" id="bInput" name="b">
+    </div>
+    <br>
+    <div>
+        <button type="button" onclick="sumBetweenNumbers()">Xem kết quả</button>
+    </div>
+    <br>
+    <div id="result_sumBetweenNumbers"></div>
+</div>
+
+    <!-- ImportJS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
