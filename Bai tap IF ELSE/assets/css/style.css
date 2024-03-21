@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.farme {
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 237, 237);
+    margin-bottom: 24px;
+    padding: 24px;
+}
+
+.work-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#result_equation, #rresult_greater, #result_num, #result_checkEvenOrOdd, #result_checkDivisibleBy3And5, #result_checksum {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
