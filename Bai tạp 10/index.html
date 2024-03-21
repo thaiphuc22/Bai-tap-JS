@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<!-- Bai tap 1 -->
+<div class="farme">
+    <p class="work-title"> Bài 1</p>
+    <p>
+        Viết function truyền vào 1 số bất kỳ và thực hiện kiểm tra<br>
+        
+        - Nếu số đó chia hết cho 3 và 5 thì in ra “FizzBuzz” <br>
+       -  Nếu số đó chia hêt cho 3 thì in ra “Fizz” <br>
+        - Nếu số đó chia hêt cho 5 thì in ra “Buzz” <br>
+    </p>
+    <h2>Enter a Number to Check FizzBuzz</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkFizzBuzz()">Check</button>
+    <div id="result"></div>
+</div>
+
+    
+
+
+<!-- Bai tap 2 -->
+<div class="farme">
+    <p class="work-title"> Bài 2</p>
+    <p>
+        Viết function giải phương trình bậc nhất (ax + b= 0) <br>
+
+        - Cần kiểm tra trường hợp a = 0 và a != 0<br>
+        - In ra kết quả <br>
+    </p>
+    <h2>Nhập các hệ số cho phương trình ax + b = 0</h2>
+    <form id="quadraticForm">
+        <label for="a">Nhập hệ số a:</label>
+        <input type="number" id="aInput" name="a"><br><br>
+        <label for="b">Nhập hệ số b:</label>
+        <input type="number" id="bInput" name="b"><br><br>
+        <button type="button" onclick="solveEquation()">Giải phương trình</button>
+    </form>
+    <div id="result_equation"></div>
+</div>
+
+
+
+    <!-- Bai tap 3 -->
+    <div class="farme">
+        <p class="work-title"> Bài 3</p>
+        <p>
+            Viết function giải phương trình bậc 2 (ax^2 + bx + c = 0)<br>
+
+            Cần kiểm tra trường hợp a = 0 và a != 0 <br>
+            In ra kết quả<br>
+        </p>
+        <h2>Nhập các hệ số cho phương trình kx^2 + lx + m = 0</h2>
+        <form id="quadraticForm">
+            <label for="k">Nhập hệ số k:</label>
+            <input type="number" id="kInput" name="k"><br><br>
+            <label for="l">Nhập hệ số l:</label>
+            <input type="number" id="lInput" name="l"><br><br>
+            <label for="m">Nhập hệ số m:</label>
+            <input type="number" id="mInput" name="m"><br><br>
+            <button type="button" onclick="solveQuadraticEquation()">Giải phương trình</button>
+        </form>
+        <div id="result_equation_2"></div>
+    </div>
+
+
+
+
+
+<!-- Bai tap 4 -->
+<div class="farme">
+    <p class="work-title"> Bài 4</p>
+    <p>
+        Viết function truyền vào 2 giá trị, đại diện cho cân nặng và chiều cao. Tính chỉ số BMI tương ứng <br>
+
+       - Sử dụng return<br>
+    </p>
+    <h2>Tính Chỉ Số BMI (Body Mass Index)</h2>
+    <form id="bmiForm">
+        <label for="weight">Cân nặng (kg):</label>
+        <input type="number" id="weightInput" name="weight"><br><br>
+        <label for="height">Chiều cao (cm):</label>
+        <input type="number" id="heightInput" name="height"><br><br>
+        <button type="button" onclick="calculateAndDisplayBMI()">Tính chỉ số BMI</button>
+    </form>
+    <div id="result_bmi"></div>
+</div>
+
+
+
+<!-- Bai tap 5 -->
+<div class="farme">
+    <p class="work-title"> Bài 5</p>
+    <p>
+        Viết function truyền vào giá trị độ C. Tính giá trị độ F tương ứng<br>
+
+        - Sử dụng return <br>
+    </p>
+    <h2>Chuyển đổi từ độ Celsius sang độ Fahrenheit</h2>
+        <form id="conversionForm">
+        <label for="celsius">Nhập độ Celsius:</label>
+        <input type="number" id="celsiusInput" name="celsius"><br><br>
+        <button type="button" onclick="convertAndDisplay()">Chuyển đổi</button>
+    </form>
+    <div id="result_conversion"></div>
+</div>
+
+
+
+<script src="./assets/js/main.js"></script>
+
+
+</body>
+</html>
