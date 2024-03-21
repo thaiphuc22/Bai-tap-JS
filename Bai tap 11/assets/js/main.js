@@ -147,7 +147,94 @@ function sumBetweenNumbers(a, b) {
         }
         result_sumBetweenNumbersDiv.textContent = sum2;
     }
-}
+};
+
+// Bài 7: Cho 1 số, viết function kiểm tra xem số đó có phải là số nguyên tố hay không, kết quả trả về true hoặc false.
+
+function isPrime(x) {
+    var x = parseFloat(document.getElementById("xInput").value);
+    var result_isPrimeDiv = document.getElementById("result_isPrime");
+
+    if (isNaN(x)) {
+        result_isPrimeDiv.textContent = "Vui lòng nhập một số nguyên!";
+        return;
+    } else {
+        if (x <= 1) {
+            result_isPrimeDiv.textContent = x + " không phải là số nguyên tố";
+            return;
+        }
+
+        for (var i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i === 0) {
+                result_isPrimeDiv.textContent = x + " không phải là số nguyên tố";
+                return;
+            }
+        }
+        result_isPrimeDiv.textContent = x + " là số nguyên tố";
+
+        }
+    };
+
+
+    // Bài 8: Cho 1 số nguyên dương bất kỳ. Viết function tính tổng tất cả các số nguyên tố mà nhỏ hơn hoặc bằng tham số truyền vào.
+
+    function isPrime2(number) {
+        if (number < 2) {
+            return false;
+        }
+    
+        for (let j = 2; j <= Math.sqrt(number); j++) {
+            if (number % j === 0) {
+                return false;
+            }
+        }
+    
+        return true;
+    };
+    
+    function sumOfPrimesUpToN() {
+        var n = parseFloat(document.getElementById("nInput").value);
+        var result_sumOfPrimesUpToNDiv = document.getElementById("result_sumOfPrimesUpToN");
+
+        let sum = 0;
+        for (let j = 2; j <= n; j++) {
+            if (isPrime2(j)) {
+                sum += j;
+            }
+        }
+        result_sumOfPrimesUpToNDiv.textContent = `${sum}: là tổng của các số nguyên tố nhỏ hơn hoặc bằng ${n} `;
+    };
+
+
+    // Bài 9: Cho 1 số nguyên dương, viết function tính tổng tất cả các ước số của số đó.
+    function sumOfDivisors() {
+        var y = parseFloat(document.getElementById("yInput").value);
+        var result_sumOfDivisorsDiv = document.getElementById("result_sumOfDivisors");
+
+        if (y <= 0 || !Number.isInteger(y)) {
+            result_sumOfDivisorsDiv.textContent = "Vui lòng một số nguyên dương"
+            return;
+        }
+    
+        let sum3 = 0;
+        for (let i = 1; i <= Math.sqrt(y); i++) {
+            if (y % i === 0) {
+                sum3 += i;
+                if (y / i !== i) { // Kiểm tra nếu i không phải là căn bậc hai của y
+                    sum3 += y / i;
+                }
+            }
+        }
+    
+        result_sumOfDivisorsDiv.textContent = sum3;
+    };
+    
+ 
+    
+    
+  
+    
+
 
 
 
